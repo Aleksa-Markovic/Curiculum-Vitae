@@ -1,0 +1,118 @@
+\documentclass{article}
+\usepackage{titling}
+\usepackage{titlesec}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{setspace}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Defines section commands
+\titleformat{\section}
+{\LARGE\bfseries\lowercase}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}[runin]
+{\bfseries}
+{$\bullet$ }
+{0em}
+{}[]
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[]
+
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Redefines the title command
+\renewcommand{\maketitle}{
+	\begin{center}
+		\vspace{.3em}
+		{\LARGE\bfseries\theauthor}\break
+		\vspace{.3em}
+		{}\titlerule\break
+		\vspace{.3em}
+		{\textbf{\normalsize{Git Source: https://github.com/Aleksa-Markovic/Curiculum-Vitae}}}
+		\\
+		{\textbf{\normalsize{English Certificate: https://github.com/Aleksa-Markovic/Certificate}}}
+	\end{center}	
+}
+
+\author{\textbf{Aleksa Markovic}}
+
+\begin{document}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Title area of the PDF
+	\maketitle
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% About me
+	\vspace*{-\baselineskip}
+	\section{\MakeUppercase{A}bout me}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Name
+	\subsection{\large{Name:}}
+	\textbf{\large{Aleksa Markovic}}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email
+	\subsection{\large{Email:}}
+	\textbf{\large{mar.aleksa98@gmail.com}}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email
+	\subsection{\large{Phone:}}
+	\textbf{\large{+381 69 422 36 14}}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Date of birth
+	\subsection{\large{Date of birth:}}
+	\textbf{\large{19. 09. 1998}}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Nationality
+	\subsection{\large{Nationality:}}
+	\textbf{\large{Serbian}}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Education
+	\subsection{\large{Education:}}
+	\subsubsection{{$\cdot$ }Faculty of Economy and Engineering - FIMEK, Novi Sad\hfill 2020. -2024.}
+	\subsubsection{{$\cdot$ }Second Grammary School, Kragujevac\hfill 2013. -2017.}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Degree
+	\subsection{\large{Program:}}
+	\textbf{\large{Software Engineering}}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Languages
+	\subsection{\large{Languages:}}
+	\textbf{\large{Serbian, English - C1 Level certified by ESB}}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Technical Skills
+	\vspace*{-\baselineskip}
+	\section{\MakeUppercase{T}echnical skills}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Languages
+	\subsection{\large{Languages:}}
+	\textbf{\large{Python, Bash, Javascript}}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Markup
+	\subsection{\large{Markup:}}
+	\textbf{\large{HTML, XML, \LaTeX}}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Tools
+	\subsection{\large{Tools:}}
+	\textbf{\large{Linux, Git, Microsoft Office, LibreOffice, Powershell, Visual Studio}}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Experience
+	\vspace*{-\baselineskip}
+	\section{\MakeUppercase{E}xperience}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Power Lever Kragujevac - Senior
+	\subsection{\large{Power Lever Kragujevac - Mid-level Software Engineer}}
+	\subsubsection{\large{Date:}\normalsize{ 08.2022. - 06.2023.}}
+	\subsubsection{\large{Worked on:}\normalsize{ Making GUI applications for In-House apps  and web-apps, Javascript development on Knack, extraction of data requested by clients.
+	Familiarization with some accounting, and ways to automate it using Python. One on One communication with companies and clients to better understand and meet their needs.}}
+	\subsubsection{\large{Reference: Andreja Janicijevic}\normalsize{ - Owner/Director, Power Lever Kragujevac\\e-mail: andrew@powerlever.rs, phone: +381 61 645 36 01}}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Power Lever Kragujevac - Junior
+	\subsection{\large{Power Lever Kragujevac - Junior Developer}}
+	\subsubsection{\large{Date:}\normalsize{ 06.2021. - 08.2022.}}
+	\subsubsection{\large{Worked on:}\normalsize{ Primarily work was based on data gathering, sorting, and manipulating. Developing data scrapping scripts using Pythons modules such as 
+	Selenium, BeautifulSoup4 and Requests and using modules such as Pandas and OpenPyxl to analyze and work with said data.}}
+
+	
+	
+	
+\end{document}
