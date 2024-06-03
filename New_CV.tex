@@ -1,0 +1,137 @@
+% environment
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{banking}
+\nopagenumbers{}
+
+\usepackage[T1]{fontenc}
+\usepackage{inputenc}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{mathpazo}
+\usepackage{graphicx}
+
+% macro
+\renewcommand*{\labelitemi}{-}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+\newcommand*{\experienceentry}[5][1.5mm]{
+    \subsection{#2} \vspace{-1.5mm}
+    \begin{tabularx}{\textwidth}{LR}
+        {\itshape #3} & {\itshape #4, #5}
+    \end{tabularx}
+    \par\addvspace{#1}
+}
+
+\newcommand*{\educationentry}[4][0.5mm]{
+    \begin{tabularx}{\textwidth}{LR}
+        {\bfseries #3} & {\bfseries #4} \\
+    \end{tabularx}
+    {\itshape #2}
+    \par\addvspace{#1}
+}
+
+\newcommand*{\scoreentry}[3][2.5mm]{
+    {\bfseries #2} \\
+    {\itshape #3}
+    \par\addvspace{#1}
+}
+
+% preamble
+\firstname{Aleksa}
+\familyname{Markovic}
+\address{Kragujevac, Serbia}{}
+
+% document
+\begin{document}
+\maketitle
+\vspace{-9.0mm}
+\begin{tabularx}{\textwidth}{C C C}
+    \emailsymbol\enspace \emaillink{mar.aleksa98@gmail.com} & \githubsocialsymbol\enspace \href{https://github.com/Aleksa-Markovic}{Aleksa-Markovic} & \faLinkedin\enspace \href{https://www.linkedin.com/in/aleksa-markovic-a4397b133/}{Aleksa Markovic}
+\end{tabularx}
+\vspace{-2.0mm}
+
+% left column
+\begin{minipage}[t]{0.62\textwidth}
+    \section{SUMMARY}
+    As a dedicated software engineer with 3 years of experience, I specialize in Python, focusing on data scraping and analysis, with additional back-end development expertise. I am fluent in English and Serbian and have a passion for traveling, reading, learning, and technology. I am eager to advance my career in software engineering by joining a prominent company.
+
+    \section{PERSONAL INFORMATION}
+    \begin{itemize}
+        \item Name: Aleksa
+        \item Surname: Markovic
+        \item Born: 19/09/1998
+        \item Gender: Male (He/Him)
+        \item Location: Kragujevac, Serbia
+    \end{itemize}
+
+    \section{EXPERIENCE}
+    \experienceentry{Power Lever}{Software Engineer}{August 2021 - September 2023}{Kragujevac, Serbia}
+
+    \textbf{Software development and Automation}
+    \begin{itemize}
+        \item Worked on automating daily tasks of other team members.
+        \item Developed back-end features for client websites to enhance customer experience.
+        \item Wrote software for both in-house and external projects using Python, including implementing UI for some of them.
+        \item Mainly focused on Python, utilizing libraries such as pandas, bs4, matplotlib, PyQt5, tkinter, requests, and threading.
+        \item Used JavaScript for back-end development on Knack, where the website was hosted.
+    \end{itemize}
+    \vspace{1.0mm}
+
+    \experienceentry{Astora Serbia}{Python Developer}{September 2023 - June 2024}{Novi-Sad, Serbia/Remote}
+
+    \textbf{Python development and Data Analysis}
+    \begin{itemize}
+        \item Developed various Python scripts for data gathering.
+        \item Used multiple libraries for data processing and analysis.
+        \item Led several projects solo, achieving complete customer satisfaction.
+        \item Fully focused on honing my Python skills and improving as a developer.
+    \end{itemize}
+    \vspace{2.0mm}
+
+\end{minipage}
+\hfill
+% right column
+\begin{minipage}[t]{0.35\textwidth}
+    \section{SKILLS}
+    \begin{tabularx}{\textwidth}{>{\bfseries}l@{\hskip 3.5mm}L}
+        Back End    & Python, Javascript                      \\
+        OS          & Windows, Linux(Ubuntu, Arch)            \\
+        Soft. Eng   & Python, Javascript, C\#, Bash           \\
+        Misc.       & AWS, \LaTeX                             \\
+        Soft Skills & Resilience, Attentiveness, Organization
+    \end{tabularx}
+
+    \section{EDUCATION}
+    \educationentry{Bachelor in Software Engineering}{FIMEK University}{Novi Sad, Serbia}
+    2020-2024
+    \par
+    \vspace{3.0mm}
+    \educationentry{High School - Mathematics Department}{Second Gymnasium}{Kragujevac, Serbia}
+
+    \section{SCORES}
+    \scoreentry{English Speaking Board: C1 English (ESB)}{27/06/2023}
+    Pass with distinction
+
+
+    \section{LANGUAGES}
+    \begin{itemize}
+        \item Serbian (Native)
+        \item English (Fluent)
+        \item Croatian (Fluent)
+    \end{itemize}
+
+    \section{INTERESTS}
+    \begin{itemize}
+        \item Learning Languages
+        \item Travel
+        \item Concerts
+        \item Technology
+        \item Cooking
+        \item Astrophotography
+    \end{itemize}
+\end{minipage}
+
+\end{document}
